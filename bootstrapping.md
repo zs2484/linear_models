@@ -30,7 +30,7 @@ sim_df_const %>%
 
     ## `geom_smooth()` using formula 'y ~ x'
 
-<img src="bootsrapping_files/figure-gfm/unnamed-chunk-3-1.png" width="90" />
+<img src="bootstrapping_files/figure-gfm/unnamed-chunk-3-1.png" width="90" />
 
 ``` r
 sim_df_nonconst %>% 
@@ -41,7 +41,7 @@ sim_df_nonconst %>%
 
     ## `geom_smooth()` using formula 'y ~ x'
 
-<img src="bootsrapping_files/figure-gfm/unnamed-chunk-3-2.png" width="90" />
+<img src="bootstrapping_files/figure-gfm/unnamed-chunk-3-2.png" width="90" />
 
 ``` r
 lm(y ~ x, data = sim_df_const) %>% broom::tidy()
@@ -86,7 +86,7 @@ boot_sample(sim_df_nonconst) %>%
 
     ## `geom_smooth()` using formula 'y ~ x'
 
-<img src="bootsrapping_files/figure-gfm/unnamed-chunk-6-1.png" width="90" />
+<img src="bootstrapping_files/figure-gfm/unnamed-chunk-6-1.png" width="90" />
 
 ``` r
 boot_sample(sim_df_nonconst) %>% 
@@ -151,7 +151,7 @@ boot_results %>%
   geom_density()
 ```
 
-<img src="bootsrapping_files/figure-gfm/unnamed-chunk-11-1.png" width="90" />
+<img src="bootstrapping_files/figure-gfm/unnamed-chunk-11-1.png" width="90" />
 
 Construct bootstrap CI
 
@@ -222,7 +222,7 @@ nyc_airbnb %>%
 
     ## Warning: Removed 9962 rows containing missing values (geom_point).
 
-<img src="bootsrapping_files/figure-gfm/unnamed-chunk-15-1.png" width="90" />
+<img src="bootstrapping_files/figure-gfm/unnamed-chunk-15-1.png" width="90" />
 
 ``` r
 airbnb_boot_results = 
@@ -275,4 +275,4 @@ airbnb_boot_results %>%
   geom_density()
 ```
 
-<img src="bootsrapping_files/figure-gfm/unnamed-chunk-18-1.png" width="90" />
+<img src="bootstrapping_files/figure-gfm/unnamed-chunk-18-1.png" width="90" />
